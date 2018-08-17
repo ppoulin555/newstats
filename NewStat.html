@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html>
+<script>
+function fcnInputTextPPL(obj) {
+    document.getElementById("id_input_number_ppl").value=obj.innerHTML;
+}
+function fcnInputTextAction(obj) {
+    document.getElementById("id_input_action").value=obj.innerHTML;
+}
+function fcnInputTextTopic(obj) {
+    document.getElementById("id_input_topic").value=obj.innerHTML;
+}
+function fcnInputTextStaff(obj) {
+    document.getElementById("id_input_staff").value=obj.innerHTML;
+    myelement = document.getElementById(obj.getAttribute('id'));
+    mycolor = window.getComputedStyle(myelement, "").getPropertyValue("background-color");
+    document.getElementById("toptr").style.backgroundColor = mycolor;
+}
+
+</script>
+<style>
+
+table {
+    border-collapse: collapse;
+	width: 100%;
+border: 0px;
+
+}
+
+
+td {
+    width: 25%;
+
+
+}
+
+#toptr {
+    
+    background-color: white;
+	height:30px;
+	border: 0px;
+}
+#top2 {
+    
+    background-color: white;
+	height:150px;
+	border: 0px;
+vertical-align: top;
+}
+#midtr {
+    
+        background-color: white;
+	height:50px;
+	font-weight: bold;
+	vertical-align: top;
+	border-top: 1px  solid black;
+	vertical-align: middle;
+	font-size: 20px;
+	
+}
+#mid2 {
+    
+    background-color: white;
+	height:250px;
+	border: 0px;
+vertical-align: top;
+}
+
+ .button {
+  margin: 10px;
+  padding: 15px 50px;
+  font-size: 24px;
+  cursor: pointer;
+  text-align: center;
+  text-decoration: none;
+  outline: none;
+  color: #fff;
+  background-color: #4CAF50;
+  border: none;
+  border-radius: 15px;
+  box-shadow: 0 9px #999;
+}
+ .btnInline {
+  display: inline;
+
+}
+ .btnBlock {
+  display: block;
+
+}
+
+
+
+ .button:not(:last-child) {
+    border-bottom: none; /* Prevent double borders */
+}
+
+ .button:hover {
+    background-color: #3e8e41;
+}
+.button:active {
+  background-color: #3e8e41;
+  box-shadow: 0 5px #666;
+  transform: translateY(4px);
+}
+
+.btnStaff {
+    color: black; /* Prevent double borders */
+}
+
+
+
+#btnStaff1 {
+    background-color: #6666ff;
+}
+#btnStaff2 {
+    background-color: #80ff80;
+}
+#btnStaff3 {
+    background-color: #df80ff;
+}
+#btnStaff4 {
+    background-color: #ff6666;
+
+}#btnStaff5 {
+    background-color: #f2d9e6;
+}
+#btnStaff6 {
+    background-color: black;
+}
+.inputstatic {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    readonly;
+    font-size:24px;
+}
+
+#buttonsubmit {
+    width: 100%;
+    background-color: #4CAF50;
+    color: white;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+
+input[type=submit]:hover {
+    background-color: #45a049;
+}
+
+
+
+</style>
+
+<body>
+
+
+<table>
+  <tr id="toptr">
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+  </tr>
+
+  <tr id="top2">
+    <td>
+
+  <button class="button btnStaff" id="btnStaff1" onclick="fcnInputTextStaff(this)">Edward</button>
+
+</td>
+    <td><button class="button btnStaff" id="btnStaff2" onclick="fcnInputTextStaff(this)">Claudia</button></td>
+    <td><button class="button btnStaff" id="btnStaff3" onclick="fcnInputTextStaff(this)">Gabrielle</button></td>
+    <td><button class="button btnStaff" id="btnStaff4" onclick="fcnInputTextStaff(this)">Seamus</button></td>
+  </tr>
+  <tr id="midtr">
+    <td>Type Action</td>
+    <td>Number of People</td>
+    <td>Topic</td>
+    <td></td>
+  </tr>
+  <tr id="mid2">
+    <td>
+<div class="btn-group">
+  <button class="button" onclick="fcnInputTextAction(this)">In Person</button>
+  <button class="button" onclick="fcnInputTextAction(this)">Incoming Call</button>
+  <button class="button" onclick="fcnInputTextAction(this)">Outbound Call</button>
+  <button class="button" onclick="fcnInputTextAction(this)">Email Reply</button>
+  <button class="button" onclick="fcnInputTextAction(this)">Email Forward</button>
+  <button class="button" onclick="fcnInputTextAction(this)">Mailout</button>
+
+</div>
+
+
+</td>
+    <td>
+<div class="btn-group">
+  <button class="button" onclick="fcnInputTextPPL(this)">1</button>
+  <button class="button" onclick="fcnInputTextPPL(this)">2</button>
+  <button class="button" onclick="fcnInputTextPPL(this)">3</button>
+  <button class="button" onclick="fcnInputTextPPL(this)">4</button>
+  <button class="button" onclick="fcnInputTextPPL(this)">5</button>
+  <button class="button" onclick="fcnInputTextPPL(this)">6</button>
+  <button class="button" onclick="fcnInputTextPPL(this)">7</button>
+  <button class="button" onclick="fcnInputTextPPL(this)">8</button>
+  <button class="button" onclick="fcnInputTextPPL(this)">9</button>
+  <button class="button" onclick="fcnInputTextPPL(this)">10</button>
+</div>
+
+
+
+
+</td>
+    <td>
+<div class="btn-group">
+  <button class="button" onclick="fcnInputTextTopic(this)">Hiking - Frontcountry</button>
+  <button class="button" onclick="fcnInputTextTopic(this)">Camping - Frontcountry</button>
+  <button class="button" onclick="fcnInputTextTopic(this)">Hiking/Camping - Backcountry</button>
+  <button class="button" onclick="fcnInputTextTopic(this)">Lost/Found</button>
+  <button class="button" onclick="fcnInputTextTopic(this)">Park Passes/Fees</button>
+  <button class="button" onclick="fcnInputTextTopic(this)">Shuttles/Transportation</button>
+  <button class="button" onclick="fcnInputTextTopic(this)">Business Licences</button>
+  <button class="button" onclick="fcnInputTextTopic(this)">Hotels/Restaurants</button>
+  <button class="button" onclick="fcnInputTextTopic(this)">Other</button>
+</div>
+
+</td>
+    <td>
+
+<div>
+  <form action="https://docs.google.com/forms/d/e/1FAIpQLSeJEzDvQnAdFEoZdkxWMHRE6aBELUrbt5tKRHMCqiOtvbJIMw/formResponse" method="POST" target="dummyframe" >
+    <label for="fname">Staff</label>
+    <input type="text" class="inputstatic" id="id_input_staff" name="entry.481447292" placeholder="Staff Name" readonly>
+
+    <label for="lname">Action</label>
+    <input type="text" class="inputstatic" id="id_input_action"  name="entry.453921264" placeholder="Action" readonly>
+
+   <label for="lname">Number of People</label>
+    <input type="text" class="inputstatic" id="id_input_number_ppl" name="entry.488411186" readonly >
+
+    <label for="lname">Topic</label>
+    <input type="text" class="inputstatic" id="id_input_topic"  name="entry.1208442845" readonly>
+
+  
+    <input id="buttonsubmit" type="submit" value="+">
+  </form>
+</div>
+
+
+</td>
+  </tr>
+
+</table>
+<iframe width="0" height="0" border="0" name="dummyframe" id="dummyframe"></iframe>
+</body>
+</html> 
